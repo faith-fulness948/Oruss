@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    background-image: url(./Screenshot\ 2023-02-28\ 163959.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wrapper {
+    text-align: center;
+     padding: 15% 0;
+    
+}
+h1 {
+    margin-bottom: 10px;
+}
+/* view port, view height and view width*/

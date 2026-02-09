@@ -1,0 +1,376 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+header {
+    background: linear-gradient(to right, #1263128f, #18171793 ), url(./pexels-atelier-kommpass-2152247243-34031837.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-block: 40px;
+    min-height: 100vh;
+    animation-name: header-fade-in;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes header-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 80%;
+    margin-inline: auto;
+    padding: 15px 35px;
+    border-radius: 15px;
+    position: fixed;
+    /* left: 10%; */
+    right: 10%;
+    top: 10%;
+    z-index: 999;
+    animation-name: nav-slide-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes nav-slide-right {
+    from {left: -100%; opacity: 0; }
+    to { left: 10%; opacity: 1; }
+}
+nav .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+
+}
+nav ul {
+    display: flex;
+    color: white;
+    gap: 20px;
+
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: ease-in-out .5s;
+}
+nav ul li a:hover {
+    color: lightgreen;
+}
+nav ul li span {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: ease-in-out .5s;
+}
+div.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+div.dropdown-hover .material-symbol-outlined {
+    rotate: 180deg;
+}
+div.dropdown:hover .dropdown-content {
+    display: flex;
+}
+li.dropdown-list-item {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+div.dropdown-content {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    padding: 20px 0px 0px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 4px 5px 5px 1px rgba(144, 238, 144, 0.87);
+    
+}
+div.dropdown-content a {
+    color: white;
+    padding-inline: 20px;
+    text-decoration: none;
+    font-size: 16.5px;
+    padding-block: 10px;
+    transition: ease-in-out .3s;
+}
+div.dropdown-content a:hover {
+    background-color: lightgreen;
+    color: #000;
+    border-bottom-left-radius: 10px;
+}
+div.hero-section {
+    margin-top: 7rem;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+div.hero-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+div.hero-text-wrapper h1{
+    font-size: 4rem;
+    color: black;
+    width: 55%;
+    line-height: 1.2;
+}
+div.hero-text-wrapper p {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    width: 50%;
+    line-height: 1.5;
+}
+div.hero-button-Wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+div.hero-button-Wrapper button {
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+div.hero-button-Wrapper button:hover {
+     background-color: white;
+     color: black;
+}
+
+
+div.hero-button-Wrapper button:last-child {
+    background-color: black;
+    color: white;
+}
+div.hero-button-Wrapper button:last-child:hover {
+    background-color: white;
+    color: black;
+}
+/* ads section */
+section.ads-section {
+    padding: 100px 25px;
+}
+div.ads-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+div.ad {
+    border: 5px ridge black;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+div.ad:hover {
+    margin-bottom: 15px;
+}
+div.ad:hover .ads-text-wrapper {
+    opacity: 1;
+    transition: ease-in-out .2.5s;
+}
+div.ads-bg-image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.ads-item-1 .ads-bg-image {
+    background-image: url(./pexels-esma-ozer-49564007-12885160.jpg);
+}
+div.ads-item-2 .ads-bg-image {
+background-image: url(./pexels-koyeldey-31321625.jpg);
+}
+div.ads-item-3 .ads-bg-image {
+    background-image: url(./pexels-koyeldey-31543086.jpg);
+}
+div.ads-text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    place-items: center;
+    text-align: center;
+    background-color: #90ee9093;
+    padding: 4rem 10px;
+    opacity: 0;
+}
+
+
+div.ads-text-wrapper p {
+    font-size: 1.1rem;
+    color: #000 ;
+    font-weight: 600;
+    line-height: 2;
+}
+div.ads-text-wrapper button{
+    width: 100px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+div.ads-text-wrapper button:hover {
+      background-color: white;
+     color: black;
+}
+
+/* team section  */
+section.team-section {
+    padding: 50px 25px;
+    background-color: lightgreen;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+section.team-section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #000;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+div.team-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+
+}
+
+div.team-item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+div.team-item img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+}
+
+
+
+section.testimonies {
+    padding: 100px 25px;
+    background-color: pink;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+section.testimonies h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: darkgray;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    
+}
+
+div.testimony-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
+
+
+div.testimony-wrapper .testimony-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    margin-inline: auto;
+    padding: 20px 35px;
+    border-radius: 15px;
+    
+    
+    
+}
+
+div.testimony-wrapper .testimony-item  .different img {
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+}
+
+div.testimony-wrapper .testimony-item  .different h3 {
+   text-align: center;
+   color: white;
+}
+
+div.testimony-wrapper .testimony-item .testimony-text-wrapper p{
+    color: whitesmoke;
+    font-size: 15px;
+    text-align: center;
+}
+
+@keyframes bounce {
+
+    10% {
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0%);
+         opacity: 1;
+    }
+}
+

@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: purple;
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 40px;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+nav .logo {
+    text-decoration: none;
+    font-size: 50px;
+    color: cornsilk;
+}
+nav ul {
+    display: flex;
+    color: aliceblue;
+    gap: 18px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+    transition: ease-in-out .20s;
+}
+nav ul li a:hover {
+    color: chocolate;
+    text-decoration: underline black ;
+}
+.pint {
+ padding: 10px;
+ margin: 20px;
+    background: url(./pexels-nadin-sh-78971847-24811706.jpg);
+    background-position: top;
+    
+}

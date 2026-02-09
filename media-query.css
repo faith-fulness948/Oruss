@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1023px) {
+    header {
+        padding-top: 80px;
+        padding-bottom: 30px;
+        min-height: 75vh;
+    }
+
+    nav {
+        top: 8%;
+        padding: 10px 35px;
+    }
+     
+    nav .logo {
+        font-size: 2.5rem;
+    }
+
+    div.hero-section {
+        margin-top: 8rem;
+        gap: 35px;
+    }
+
+    div.hero-text-wrapper {
+        gap: 25px;
+    }
+
+    div.hero-text-wrapper h1 {
+        font-size: 3.5rem;
+
+        width: 80%;
+    }
+
+    div.hero-text-wrapper p{
+          font-size: 18px;
+          width: 90px;
+    }
+
+    div.hero-button-wrapper button {
+        width: 100px;
+    }
+    section.ads-section {
+        padding: 75px 25px
+    }
+
+    div.ads-wrapper {
+        gap:20px;
+        flex-wrap : wrap;
+    }
+}

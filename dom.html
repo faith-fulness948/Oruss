@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM and DOM Manipulation</title>
+    <script defer src="dom.js"></script>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    <h1 id="heading">Hello World</h1>
+    <img src="./pexels-atelier-kommpass-2152247243-34031837.jpg" width="200px" alt="watch">
+    <button type="button" class="btn">Click</button>
+    <button type="button" class="btn">Press</button>
+
+    <!-- List of items -->
+    <ul id="fruits">
+        <!-- To Populate dynamically -->
+
+    </ul>
+    
+
+    
+
+<!-- Dropdown -->
+    <div class="dropdown-container">
+        <!-- Trigger Element -->
+       <button type="button" id="menu-btn">Click me</button>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu" id="menu">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+        </div>
+    </div>
+
+
+
+<div class="form-wrapper">
+    <form action="" method="post" id="myForm" onsubmit="return validateForm()">
+        <fieldset>
+           <label for="firstname">First Name:</label>
+           <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" >
+        </fieldset>
+        <fieldset>
+           <label for="lastname">last Name:</label>
+           <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" >
+        </fieldset>
+        <fieldset>
+           <label for="email">E-mail:</label>
+           <input type="email" name="email" id="email" placeholder="Enter your email" >
+        </fieldset>
+        <fieldset>
+           <label for="tel">Tel:</label>
+           <input type="tel" name="tel" id="tel" placeholder="Enter your telephone no." >
+        </fieldset>
+        <fieldset> 
+           <label for="password">Password:</label>
+           <input type="password" name="password" id="password" placeholder="Enter your password" >
+        </fieldset>
+        <fieldset>
+           <label for="c-password">Confirm Password:</label>
+           <input type="password" name="c-password" id="cpassword" placeholder="Re-enter your password" >
+        </fieldset>
+        <fieldset>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    
+    <div class="modal-wrapper" id="modal-wrapper">
+        <div class="modal" id="modal">
+            <h2 id="title"></h2>
+            <p id="desc"></p>
+            <button type="button" id="cancel">Cancel</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

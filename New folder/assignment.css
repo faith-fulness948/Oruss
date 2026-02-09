@@ -1,0 +1,36 @@
+h1{
+    font-size: xx-large;
+    color: purple;
+    text-transform: capitalize;
+}
+.style{
+    font-style: normal;
+}
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.h2{
+    text-shadow: 200px;
+}
+.spacing{
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.height{
+    line-height: 100px;
+}
+.weight{
+    font-style: italic;
+    font-weight: 900;
+}
+.overflow{
+    text-overflow: ellipsis;
+    width: 200px;
+    overflow: hidden;
+}

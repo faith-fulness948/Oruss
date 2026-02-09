@@ -1,0 +1,53 @@
+h1 {
+    color:purple ;
+    background-color: rgb(225, 0, 5);
+}
+.topic {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+h2 {
+    color: pink;
+    background-color: rgb(200, 150, 0);
+
+}
+.red {
+    color: #ffffff;
+    background-color: #ff0000;
+}
+.green {
+    color: #ffffff;
+    background-color: #00ff00;
+}
+.blue {
+    color: #ffffff;
+    background-color: #0000ff;
+}
+.orange {
+    color: #ffffff;
+    background-color: #ffa500;
+}
+.purple {
+    color: #ffffff;
+    background-color: #800080;
+}
+.bold {
+    font-weight: 900;
+}
+.underline {
+    text-decoration: 5px dashed underline green;
+}
+.justify {
+  text-align: justify;  
+}
+.spacing {
+    word-spacing: 20px;
+}
+.milo {
+    letter-spacing: 5px;
+}
+.height {
+    line-height: 50pxs;
+}
+.shadow {
+    text-indent: 20px;
+}

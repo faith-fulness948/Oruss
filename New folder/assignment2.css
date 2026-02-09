@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+background-color: blueviolet;
+}
+.wrapper {
+    text-align: center;
+margin: 25px;
+
+}
+h1 {
+    padding: 50px;
+    background: url(./pexels-olly-3770272.jpg) ;
+    margin: 10px;
+    background-size: cover;
+
+   }
+   h2 {
+    background-image: url(./pexels-evie-shaffer-1259279-4004374.jpg);
+    background-size: cover;
+    background-position: center;
+padding: 200px;
+    margin: 100px;
+    
+   }

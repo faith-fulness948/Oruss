@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        div.group {
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Page </h1>
+    <br><br>                                                                                                              
+    <div class="group">
+        <!-- Inline Scripting -->
+        <button onclick="window.alert('Welcome, Ayomiposi and Faithfulness')">Click me</button>
+        <!-- Internal Scripting -->
+        <button id="nau">Check question</button>
+        <script>
+            document.getElementById("nau").addEventListener
+            ("click", function() {
+                window.prompt("How are you finding today's class?");
+            });
+        </script>
+    </div>
+    <div>
+        <h2>Count is at <span id="count"></span></h2>
+        <div class="group">
+            <button id="increase">Increase</button>
+            <button id="decrease">Decrease</button>
+        </div>
+    </div>
+    <script src="./contact.js"></script>
+    <div>
+        <p>
+            SLAP YOURSELF!!!!!!
+        </p>
+    </div>
+</body>
+</html>
+
+
+<!-- DOM Manipulation means using JavaScript to change or control what appears on a webpage.
+DOM = Document Object Model
+It represents your HTML as a tree of objects that JavaScript can interact with.
+
+🧠 Simple Meaning
+👉 DOM Manipulation = changing HTML or CSS using JavaScript
+You can:
+
+
+Change text
+
+
+Change colors
+
+
+Add or remove elements
+
+
+Respond to clicks
+
+
+Hide or show things
+
+
+
+📌 Example HTML
+<h1 id="title">Hello World</h1>
+<button onclick="changeText()">Click me</button>
+
+
+📌 JavaScript (DOM Manipulation)
+function changeText() {
+  document.getElementById("title").textContent = "Hello Faith!";
+}
+
+✅ When the button is clicked, the text changes.
+
+🔑 Common DOM Methods
+1️⃣ getElementById()
+document.getElementById("box");
+
+2️⃣ querySelector()
+document.querySelector(".container");
+
+3️⃣ Change Text
+element.textContent = "New Text";
+
+4️⃣ Change Style
+element.style.color = "red";
+
+5️⃣ Add Class
+element.classList.add("active");
+
+6️⃣ Remove Element
+element.remove();
+
+
+🧩 Example: Button Changes Color
+<button id="btn">Click me</button>
+
+<script>
+  let btn = document.getElementById("btn");
+
+  btn.onclick = function () {
+    btn.style.backgroundColor = "blue";
+    btn.style.color = "white";
+  };
+</script>
+
+
+💡 Why DOM Manipulation is Important
+✔ Makes websites interactive
+✔ Used in forms, games, dashboards
+✔ Core skill for JavaScript developers
+✔ Used in React, Vue, Angular
+
+If you want, I can next explain:
+✅ DOM Events
+✅ DOM vs BOM
+✅ Mini project using DOM
+✅ DOM manipulation with examples for beginners
+Just tell me 😊 -->
